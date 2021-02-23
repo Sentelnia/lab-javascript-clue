@@ -99,5 +99,16 @@ function selectRandom (someArr) {
     return result;   
 };
 
+function pickMystery () {
+    let mystery = {
+        suspect : '',
+        weapon : '',
+        room : ''
+     };
+     mystery.suspect = selectRandom(suspectsArray);
+     mystery.weapon = selectRandom(weaponsArray);
+     mystery.room = selectRandom(roomsArray);
+     return mystery;
+}
 
 // ITERATION 3
