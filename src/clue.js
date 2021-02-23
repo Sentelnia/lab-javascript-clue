@@ -1,9 +1,5 @@
 // ITERATION 1
-let suspectsArray = [];
-    
 
-let weaponsArray = [];
-let roomsArray = [];
 // Suspects Collection
 const suspectsArray = [
         {  
@@ -14,7 +10,7 @@ const suspectsArray = [
             description: 'He has a lot of connections',
             image: 'https://pbs.twimg.com/profile_images/506787499331428352/65jTv2uC.jpeg',
             color: 'green'
-        }
+        },
         {
             firstName: "Doctor",
             lastName: "Orchid",
@@ -23,7 +19,7 @@ const suspectsArray = [
             description: "PhD in plant toxicology. Adopted daughter of Mr. Boddy",
             image: "http://www.radiotimes.com/uploads/images/Original/111967.jpg",
             color: "white",
-        }
+        },
         {
             firstName: "Victor",
             lastName: "Plum",
@@ -32,7 +28,7 @@ const suspectsArray = [
             description: "Billionaire video game designer",
             image: "https://66.media.tumblr.com/ee7155882178f73b3781603f0908617c/tumblr_phhxc7EhPJ1w5fh03_540.jpg ",
             color: "purple",
-        }
+        },
         {
             firstName: "Kasandra",
             lastName: "Scarlet",
@@ -41,7 +37,7 @@ const suspectsArray = [
             description: "She is an A-list movie star with a dark past",
             image: "https://www.radiotimes.com/uploads/images/Original/111967.jpg",
             color: "red",
-        }
+        },
         {
             firstName: "Eleanor",
             lastName: "Peacock",
@@ -50,7 +46,7 @@ const suspectsArray = [
             description: "She is from a wealthy family and uses her status and money to earn popularity",
             image: "https://metrouk2.files.wordpress.com/2016/07/mrs-peacock.jpg",
             color: "blue",
-        }
+        },
         {
             firstName: "Jack",
             lastName: "Mustard",
@@ -61,7 +57,7 @@ const suspectsArray = [
             color: "yellow",
         }  
     ];
-];
+
 
 // Rooms Collection
 const roomsArray = [
@@ -96,5 +92,11 @@ const weaponsArray = [
 ];
 
 // ITERATION 2
+function selectRandom (someArr) {
+    let result ;
+    result = someArr[Math.round(Math.random() * someArr.length -1)];
+    return result
+    
+};
 
 // ITERATION 3
